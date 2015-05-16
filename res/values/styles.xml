@@ -1,0 +1,48 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="menu_text_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/menu_text_height</item>
+        <item name="android:drawablePadding">@dimen/menu_drawablePadding</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/menu_paddingleft</item>
+        <item name="android:paddingRight">@dimen/menu_paddingleft</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/menu_text_size</item>
+        <item name="android:background">@drawable/menu_item_selector</item>
+    </style>
+    
+    <style name="menu_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/menu_line_height</item>
+        <item name="android:background">@drawable/biz_pc_account_line</item>
+    </style>
+
+    <style name="content_order_title">
+        <item name="android:layout_width">@dimen/content_order_textwidth</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_margin">@dimen/content_order_margin</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/content_order_textsize</item>
+    </style>
+    
+</resources>

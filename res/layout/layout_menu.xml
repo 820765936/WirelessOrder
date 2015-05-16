@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/menu_background"
+    android:orientation="vertical"
+    android:paddingTop="30dp" >
+
+    <RelativeLayout
+        android:id="@+id/menu_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:clickable="true"
+        android:background="@drawable/menu_item_selector" >
+
+        <com.yeyunlin.view.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/user_icon" />
+
+        <TextView
+            android:id="@+id/menu_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="28.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/profile_image"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:text="@string/menu_title_user"
+            android:textColor="@color/white"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/menu_title_order"
+        style="@style/menu_text_title"
+        android:text="@string/menu_title_order" />
+
+    <View style="@style/menu_line" />
+
+    <TextView
+        android:id="@+id/menu_title_changedesk"
+        style="@style/menu_text_title"
+        android:text="@string/menu_title_changedesk" />
+
+    <View style="@style/menu_line" />
+
+    <TextView
+        android:id="@+id/menu_title_collect"
+        style="@style/menu_text_title"
+        android:text="@string/menu_title_collect" />
+
+    <View style="@style/menu_line" />
+
+    <TextView
+        android:id="@+id/menu_title_bill"
+        style="@style/menu_text_title"
+        android:text="@string/menu_title_bill" />
+
+    <View style="@style/menu_line" />
+
+    <TextView
+        android:id="@+id/menu_title_reviews"
+        style="@style/menu_text_title"
+        android:text="@string/menu_title_reviews" />
+
+    <View style="@style/menu_line" />
+
+    <TextView
+        android:id="@+id/menu_title_member"
+        style="@style/menu_text_title"
+        android:text="@string/menu_title_member" />
+
+    <View style="@style/menu_line" />
+
+</LinearLayout>

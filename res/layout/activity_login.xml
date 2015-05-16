@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/light_blue" >
+
+        <ImageView
+            android:id="@+id/top_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/imageview_margin_right"
+            android:background="@drawable/ic_menu_back"
+            android:contentDescription="@string/menu_title_order" />
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/content_login_land"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/top_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/imageview_margin_right"
+            android:text="@string/content_login_register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/menu_text_size" />
+    </RelativeLayout>
+
+    <com.yeyunlin.view.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/login_profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/user_icon" />
+
+    <LinearLayout
+        android:id="@+id/login_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_profile_image"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp" >
+
+        <EditText
+            android:id="@+id/login_account"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="@string/content_login_account"
+            android:inputType="number"
+            android:background="@drawable/textfield_multiline_activated_holo_dark" />
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:inputType="textPassword"
+            android:hint="@string/content_login_password"
+            android:background="@drawable/textfield_multiline_activated_holo_dark" />
+        <Button 
+            android:id="@+id/login_land"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="@string/content_login_land"
+            android:textSize="@dimen/menu_text_size"
+            android:textColor="@color/white"
+            android:background="@drawable/login_back_selector"/>
+    </LinearLayout>
+
+</RelativeLayout>

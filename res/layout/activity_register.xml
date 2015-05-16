@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/light_blue" >
+
+        <ImageView
+            android:id="@+id/top_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/imageview_margin_right"
+            android:background="@drawable/ic_menu_back"
+            android:contentDescription="@string/menu_title_order" />
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/content_login_register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/register_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:text="@string/register_name"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/register_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/textfield_multiline_activated_holo_dark"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:text="@string/register_account"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/register_account"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/textfield_multiline_activated_holo_dark"
+                android:inputType="number"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:text="@string/register_password"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/textfield_multiline_activated_holo_dark"
+                android:inputType="textPassword"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:text="@string/register_integral"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/register_integral"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/textfield_multiline_activated_holo_dark"
+                android:focusable="false"
+                android:text="@string/register_integral_imput"
+                android:textColor="@color/dark_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:text="@string/register_icon"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/register_icon"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/textfield_multiline_activated_holo_dark"
+                android:focusable="false"
+                android:text="@string/register_icon_imput"
+                android:textColor="@color/dark_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register_land"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/login_back_selector"
+            android:text="@string/content_login_register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/menu_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

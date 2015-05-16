@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/food_menu_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/contain"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" />
+
+    <TextView
+        android:id="@+id/food_Menu_noorder"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:text="@string/no_order"
+        android:textColor="@android:color/black"
+        android:textSize="26sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/contain"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/login_back_selector"
+        android:text="@string/contain"
+        android:textColor="@android:color/white"
+        android:textSize="21sp" />
+
+</RelativeLayout>

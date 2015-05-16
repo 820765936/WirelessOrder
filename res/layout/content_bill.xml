@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/bill_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/editbox_background_focus_yellow"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/bill_price"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:text="@string/bill_price"
+            android:textColor="@android:color/black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bill_paypassage"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:text="@string/bill_paypassage"
+            android:textColor="@color/dark_black"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/bill_time"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:text="@string/bill_time"
+            android:textColor="@color/dark_black"
+            android:textSize="21sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:src="#87ceeb" />
+
+        <TextView
+            android:id="@+id/hotel_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:text="@string/hotel_name"
+            android:textColor="@color/dark_black"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/hotel_manager"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:text="@string/hotel_manager"
+            android:textColor="@color/dark_black"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/hotel_phone"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:text="@string/hotel_phone"
+            android:textColor="@color/dark_black"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bill_noorder"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:text="@string/no_bill"
+        android:visibility="gone"
+        android:textColor="@android:color/black"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/bill_cash"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_back_selector"
+            android:text="@string/bill_cash"
+            android:textColor="@android:color/white"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/bill_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_back_selector"
+            android:text="@string/bill_alipay"
+            android:textColor="@android:color/white"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+</RelativeLayout>
